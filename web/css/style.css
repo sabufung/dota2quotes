@@ -1,0 +1,83 @@
+#navBarShadow {
+    position:absolute;
+    width:100%;
+    height:29px;
+    top:68px;
+    left:0px;
+    background-image:url('http://cdn.dota2.com/apps/dota2/images/header/header_bg_shadow.png');
+    background-repeat:repeat-x;
+    z-index:100;
+    pointer-events:none;
+}
+#navBarBGRepeat {
+    width: 100%;
+    height: 68px;
+    position: relative;
+    margin-bottom: 1px;
+    z-index: 10001;
+    background-image: linear-gradient( to top, #171717, #111111, #040404, #010101 );
+}
+@font-face {
+    font-family: "My Custom Font";
+    src: url(../font/radiance.ttf) format("truetype");
+}
+.dotaFont{
+    font-family: "My Custom Font", Roboto;
+}
+body {
+    margin:0;
+    padding:0;
+    background-image:url('http://cdn.dota2.com/apps/dota2/images/generic/bg_notile.jpg');
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-color:#0a1010;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #cccccc !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #000000 !important;
+    border: 1px solid #826e6e;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #1b2b3e));
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #ffffff;
+}
+th{
+    color: #cccccc;
+}
+#playerDataTable_filter{
+    display: none;
+}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd, table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1, table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1, table.dataTable tbody tr {
+        background-color: #424443;
+}
+#playerDataTable > thead{
+    background-color: #7db714;
+}
+#playerDataTable th {
+    color: #fff;
+    text-transform: uppercase;
+}
+#playerDataTable tbody{
+    color: #fff;
+}
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+    border-top: 1px solid #4b4d4a;
+}
+#playerDataTable{
+    outline: none;
+    border-color: #d9ff35;
+    box-shadow: 0 0 18px #d9ff35;
+    border: 1px solid #b1da13;
+    border-radius: -1px;
+    width: 100%;
+}
+#playerDataTable tbody tr:hover > td{
+    background-color: #717774 !important;
+}
+#playerDataTable tbody tr:hover td{
+    text-shadow: 0 0 1px #d9ff35;
+    font-size: 15px;
+}
